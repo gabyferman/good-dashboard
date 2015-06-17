@@ -1,0 +1,61 @@
+// Asign default values
+
+
+// Core
+
+$login-form-width: 	320px !default;
+
+$base-color: 		#444 !default;
+
+$logo-url:		'../images/admin-logo.png' !default;
+$logo:			transparent url( $logo-url ) no-repeat top center !default;
+
+// Colors
+
+$gray-darker: 		lighten( #000, 13.5% ) !default; // HEX Color: #222
+$gray-dark: 		lighten( #000, 20% ) !default; // HEX Color: #333
+$gray: 			lighten( #000, 33.5% ) !default; // HEX Color: #555
+$gray-light: 		lighten( #000, 46.7% ) !default; // HEX Color: #777
+$gray-lighter: 		lighten( #000, 93.5% ) !default; // HEX Color: #eee
+
+$highlight: 		#0074a2 !default;
+$success: 		#9acd32 !default;
+$danger: 		#cd5c5c !default;
+$action: 		$highlight !default;
+
+$body-bg: 		#008080 !default;
+$text-color:		$base-color !default;
+$link-color:		$highlight !default;
+$link-hover-color:	darken( $link-color, 15% ) !default;
+
+// Type
+
+$font-family: 		'Open Sans', sans-serif !default;
+$font-size:	16px !default;
+$font-size-small:	0.875em !default;
+$font-weight: 		300 !default;
+$line-height:		1.5 !default;
+
+// Global
+
+$padding-base: 	$font-size * $line-height !default;
+$padding-base-large: 	$line-height * $line-height !default;
+
+$margin-base: 	$padding-base !default;
+$margin-base-large: 	$padding-base-large !default;
+
+$border-radius: 	2px !default;
+
+// Buttons
+
+$btn-color: 		$action !default;
+$btn-font-color: 	#fff !default;
+
+// Forms
+
+$input-bg: 		#fff !default;
+$input-color: 		$gray !default;
+$input-border: 		#ddd !default;
+$input-border-radius: 	$border-radius !default;
+$input-border-focus: 	$highlight !default;
+$input-placeholder: 	$gray-light !default;
