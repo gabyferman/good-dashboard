@@ -1,0 +1,8 @@
+#wpadminbar #wp-admin-bar-wp-logo > .ab-item .ab-icon,
+#wpadminbar > #wp-toolbar > #wp-admin-bar-root-default #wp-admin-bar-wp-logo > .ab-item .ab-icon {
+	margin: 0;
+	padding: 0;
+	width: 32px;
+	height: 32px;
+	background-image: url('../images/admin-logo-32-32.png') !important;
+}
