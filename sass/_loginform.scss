@@ -1,33 +1,15 @@
-
-/**
- * Login stylesheeet
- *
- * @package Candy Dashboard
- * @subpackage plugin
- *
- * Custom styles for admin login page
- *
- * CONTENTS
- *
- * Global.............................................Global variables & config.
- * Components....................................Header, footers, forms, buttons
- * Trumps...........................................Class helpers*
- *
- */
-
 @import 'variables';
 @import 'mixins';
 
-
-
-/*===============================
-=            #GLOBAL            =
-===============================*/
-
+/* ==========================================================================
+   Login
+   ========================================================================== */
+/* Global
+   ========================================================================== */
 *, *:before, *:after {
-	-webkit-box-sizing: 	border-box;
-	-moz-box-sizing: 	border-box;
-	box-sizing: 		border-box;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
 }
 
 body {
@@ -52,18 +34,12 @@ a {
 	text-align: center;
 }
 
-
-
-/*===================================
-=            #COMPONENTS            =
-===================================*/
-
-/* Logo */
-
+/* Components
+   ========================================================================== */
+/* logo */
 .login h1 {
 	margin: 0 auto;
 	width: $login-form-width;
-
 	a {
 		display: block;
 		margin: 0 auto $margin-base;
@@ -79,7 +55,6 @@ a {
 	margin: 0 auto $margin-base;
 	padding: $padding-base;
 	width: $login-form-width;
-	border: 1px solid $gray-lighter;
 	box-shadow: none;
 }
 
@@ -117,30 +92,34 @@ a {
 	font-weight: $font-weight;
 }
 
-/* Button */
-
+/* buttons */
 .wp-core-ui .button-primary {
 	@include button( $btn-color, $btn-font-color );
 }
 
-/* Messages */
+.wp-core-ui .button-group.button-large .button,
+.wp-core-ui .button.button-large {
+	height: $btn-height-large;
+	line-height: $btn-height-large;
+	padding: 0 $padding-base;
+}
 
+/* messages */
 .login #login_error, .login .message {
 	margin: 0 auto $margin-base;
 	width: $login-form-width;
 	font-size: $font-size-small;
 	text-align: left;
 	border-left-color: $success;
+	box-shadow: none !important;
 }
 
 .login #login_error {
 	border-color: $danger;
 }
 
-/*==============================
-=            #TRUMPS           =
-==============================*/
-
+/* Components
+   ========================================================================== */
 .login #backtoblog,
 .login #nav {
 	display: block;
@@ -150,13 +129,12 @@ a {
 	font-size: $font-size-small;
 }
 
-	.login #backtoblog a,
-	.login #nav a {
-		color: $link-color;
-	}
+.login #backtoblog a,
+.login #nav a {
+	color: $link-color;
+}
 
-	.login #backtoblog a:hover, .login #backtoblog a:focus,
-	.login #nav a:hover, .login #nav a:focus {
-		color: $link-hover-color;
-	}
-
+.login #backtoblog a:hover, .login #backtoblog a:focus,
+.login #nav a:hover, .login #nav a:focus {
+	color: $link-hover-color;
+}

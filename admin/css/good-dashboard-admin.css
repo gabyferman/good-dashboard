@@ -1,0 +1,36 @@
+/**
+ * All of the CSS for your admin-specific functionality should be
+ * included in this file.
+ */
+
+/* ==========================================================================
+   WP-Admin
+   ========================================================================== */
+.good-dashboard-admin #wpadminbar {
+	height: 36px;
+	line-height: 36px;
+}
+
+@media (max-width: 782px) {
+	html .good-dashboard-admin #wpadminbar {
+		height: 46px;
+	}
+}
+
+.good-dashboard-admin #wpadminbar .quicklinks .ab-empty-item,
+.good-dashboard-admin #wpadminbar .quicklinks a, #wpadminbar .shortlink-input {
+	height: 36px;
+}
+
+/* ==========================================================================
+   Options Page
+   ========================================================================== */
+.good-dashboard-wrap .good-dashboard-image-container {
+	margin-bottom: 8px;
+}
+
+.good-dashboard-wrap .good-dashboard-image-container img {
+	width: auto;
+	height: auto;
+	max-width: 90px;
+}
